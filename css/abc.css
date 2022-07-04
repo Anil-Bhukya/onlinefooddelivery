@@ -1,0 +1,232 @@
+ /* CSS Reset */
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+
+ /* Navigation bar */
+ .container {
+    display: flex;
+    align-items: center;
+ }
+
+ .container ul {
+    display: flex;
+    /* list-style: none; */
+ }
+
+ /* #image{
+    margin: 34px 45px;
+} */
+ #image img {
+
+    margin: 20px 60px;
+    height: 45px;
+    width: 60px;
+ }
+
+ .container ul li {
+    list-style: none;
+    font-size: 1.3rem;
+ }
+
+ .container ul li a {
+    /* list-style: none; */
+    /* font-size: 26px; */
+    text-decoration: none;
+    padding: 3px 22px;
+    display: block;
+    /* border-radius: 20px; */
+    color: white;
+ }
+
+ .container ul li a:hover {
+    /* list-style: none; */
+    /* font-size: 26px; */
+    /* text-decoration: dotted; */
+    background-color: aqua;
+    /* padding: 3px 22px; */
+    /* display: block; */
+    border-radius: 20px;
+    color: darkgreen;
+ }
+
+ /* z index of static is 0 */
+ .container::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+ }
+
+ .container {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 24;
+ }
+
+ #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 13px; */
+    padding: 3px 220px;
+    font-family: cursive;
+    /* height: 700px; */
+ }
+
+ #home p {
+    color: white;
+    text-align: center;
+ }
+
+ #home::before {
+    content: "";
+    background: url("../img/eat-2834549_960_720.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+ }
+
+ /* section2 */
+ /* .services-container{
+   margin: 245px 20px;
+ } */
+ #run{
+   margin:  240px 20px;
+ }
+#service{
+   margin: 5px;
+   display: flex;
+   /* flex-direction: column; */
+}
+#service .box{
+   border: 2px solid red;
+   padding: 2px 1px;
+    margin: 2px 3px;
+    border-radius: 15px;
+    background-color: bisque;
+    /* width: 200px; */
+
+}
+#service .box img{
+   height: 160px;
+   display: block;
+   margin: auto;
+   /* width: 300px; */
+ }
+ #clientsection{
+         /* height: 330px; */
+         margin: 0px;
+ }
+ .clients{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .clients img{
+   height: 124px;
+   /* width: 100px; */
+  
+ }
+ .clients .box{
+   padding: 34px;
+
+}
+#clientsection::before{
+   content: "";
+   background: url("../img/bg.jpg") ;
+   position: absolute;
+   height: 44%;
+   width: 100%;
+   border-radius: 34px;
+   z-index: -1;
+   opacity: 0.45;
+ }
+ #contact{
+   position: relative;
+   top: -93px;
+ }
+ #contact::before{
+   content: "";
+   background: url("../img/contact.jpg") no-repeat center center/cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.5;
+ }
+ .contactbox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding-bottom: 34px;
+ }
+ .contactbox input,.contactbox textarea{
+   width: 100%;
+   padding: 0.5rem;
+   font-family: cursive;
+   border-radius: 10px;
+ }
+ .contactbox form{
+      width: 741px;
+      padding: 1.5rem;
+
+ }
+ .contactbox label{
+   font-size: 1.9rem;
+   font-family: cursive;
+ }
+ footer{
+
+   /* position: relative; */
+   background-color: black;
+   color: white;
+   position: relative;
+   top: -100px;
+ }
+ /* #services{}
+ #services{}
+ #services{} */
+ .h-primary {
+    color: rgb(3, 3, 3);
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+ }
+
+ .secondaryhead {
+    color: rgb(11, 11, 11);
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+ }
+ .center{
+   text-align: center;
+ }
+.para
+{
+   font-family: cursive;
+   font-size: 20px;
+}
+ .btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 20px;
+    cursor: pointer;
+ }

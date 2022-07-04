@@ -1,0 +1,45 @@
+#service{
+    flex-direction: column;
+}
+ .clients{
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+} 
+/* .clientsection{
+    height: ;
+} */
+#clientsection{
+    position: relative;
+}
+#clientsection::before{
+    height: 100%;
+}
+.clients img{
+    width: 200px;
+}
+#contact{
+    top: -131px;
+}
+.container{
+    flex-direction: column;
+}
+.container ul li a{
+          padding: 3px 3px;
+}
+#run {
+     margin: 0px 0px;
+     position: relative;
+     top: -154px; 
+     /* left: 0px; */
+}
+#home{
+    padding: 6px 3px;
+    height: 710px;
+    position: relative;
+    top: -123px;
+}
+#home::before{
+        height: 100%;
+        top: -28px;
+    
+}
